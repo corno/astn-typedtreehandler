@@ -2,9 +2,9 @@
   "author": "Corno",
   "bin": {},
   "dependencies": {
-    "astn-handlers-api": "^0.2.1",
-    "astn-tokenconsumer-api": "^0.2.0",
-    "astn-typedtreehandler-api": "^0.6.0",
+    "astn-handlers-api": "^0.5.0",
+    "astn-tokenconsumer-api": "^0.3.1",
+    "astn-typedtreehandler-api": "^0.7.0",
     "pareto-lang-api": "^0.1.1",
     "pareto-runtime": "^0.22.0"
   },
