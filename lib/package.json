@@ -26,6 +26,6 @@
     "url": "git+https://github.com/corno/astn-typedtreehandler-lib.git"
   },
   "types": "dist/index.d.ts",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "content-fingerprint": "7c8bb1cce0a35ed8595c62419cacba6fb1474ab4"
 }
