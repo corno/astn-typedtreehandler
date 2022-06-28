@@ -3,8 +3,7 @@
   "bin": {},
   "dependencies": {
     "astn-handlers-api": "^0.5.1",
-    "pareto-lang-api": "^0.1.1",
-    "pareto-runtime": "^0.22.0"
+    "pareto-lang-api": "^0.1.1"
   },
   "files": [
     "dist",
@@ -25,5 +24,5 @@
   },
   "types": "dist/index.d.ts",
   "version": "0.7.2",
-  "content-fingerprint": "a92aa810d6586a51e9937c42e5af822b472e6c69"
+  "content-fingerprint": "f4a7351fedf5cfd6f66b6d38126f091f8ac6dadb"
 }
