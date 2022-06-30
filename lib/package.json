@@ -2,11 +2,12 @@
   "author": "Corno",
   "bin": {},
   "dependencies": {
-    "astn-handlers-api": "^0.5.1",
-    "astn-tokenconsumer-api": "^0.3.2",
+    "astn-handlers-api": "^0.6.0",
+    "astn-tokenconsumer-api": "^0.3.4",
     "astn-typedtreehandler-api": "^0.7.3",
-    "pareto-lang-api": "^0.1.1",
-    "pareto-runtime": "^0.22.0"
+    "pareto-lang-api": "^0.5.1",
+    "pareto-lang-lib": "^0.7.0",
+    "pareto-runtime": "^0.23.0"
   },
   "files": [
     "dist",
@@ -23,9 +24,9 @@
   "name": "astn-typedtreehandler-lib",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corno/astn-typedtreehandler-lib.git"
+    "url": "git+https://github.com/corno/astn-typedtreehandler.git"
   },
   "types": "dist/index.d.ts",
   "version": "0.6.3",
-  "content-fingerprint": "f49c7b9470c67c4d9288d65bcc9a8705797b9bc4"
+  "content-fingerprint": "fb231dc89983fd218530adca6f2e1b31b7f3bab3"
 }

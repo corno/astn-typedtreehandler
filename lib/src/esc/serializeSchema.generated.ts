@@ -1,5 +1,7 @@
 import { Schema, ValueDefinition } from "astn-typedtreehandler-api"
+import * as pl from "pareto-lang-lib"
 import * as pr from "pareto-runtime"
+import * as pa from "pareto-lang-api"
 import { ContentToken } from "astn-tokenconsumer-api"
 
 export function serializeSchema(
@@ -7,7 +9,7 @@ export function serializeSchema(
     sendEvent: (event: ContentToken) => void,
 ): void {
     function serializeDictionary<T>(
-        dict: pr.IReadonlyDictionary<T>,
+        dict: pa.IReadonlyDictionary<T>,
         entryCallback: (t: T) => void,
     ) {
         sendEvent(["structural", {
@@ -58,7 +60,7 @@ export function serializeSchema(
             wrapping: ["quote", {}],
         }])
     }
-    function serializeReference<T>(reference: pr.IReference<T>) {
+    function serializeReference<T>(reference: pa.IReference<T>) {
         sendEvent(["simple string", {
             value: reference.name,
             wrapping: ["quote", {}],
@@ -167,7 +169,7 @@ export function serializeSchema(
                             break
                         }
                         default:
-                            pr.au(valueDefinition.type[0])
+                            pl.au(valueDefinition.type[0])
                     }
                 })
             },

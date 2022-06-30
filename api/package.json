@@ -2,8 +2,8 @@
   "author": "Corno",
   "bin": {},
   "dependencies": {
-    "astn-handlers-api": "^0.5.1",
-    "pareto-lang-api": "^0.1.1"
+    "astn-handlers-api": "^0.6.0",
+    "pareto-lang-api": "^0.5.1"
   },
   "files": [
     "dist",
@@ -20,9 +20,9 @@
   "name": "astn-typedtreehandler-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corno/astn-typedtreehandler-api.git"
+    "url": "git+https://github.com/corno/astn-typedtreehandler.git"
   },
   "types": "dist/index.d.ts",
   "version": "0.7.3",
-  "content-fingerprint": "f4a7351fedf5cfd6f66b6d38126f091f8ac6dadb"
+  "content-fingerprint": "07fbf478ce98eb8400aca943766474e5bd735c2f"
 }
