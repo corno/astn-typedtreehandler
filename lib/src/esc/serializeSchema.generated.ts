@@ -15,12 +15,12 @@ export function serializeSchema(
         sendEvent(["structural", {
             "type": ["open dictionary", {}],
         }])
-        dict.forEach((entry, key) => {
+        dict.toArray().forEach((entry) => {
             sendEvent(["simple string", {
-                value: key,
+                value: entry.key,
                 wrapping: ["quote", {}],
             }])
-            entryCallback(entry)
+            entryCallback(entry.value)
         })
         sendEvent(["structural", {
             "type": ["close dictionary", {}],

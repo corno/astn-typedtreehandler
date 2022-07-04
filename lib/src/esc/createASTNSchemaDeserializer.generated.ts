@@ -8,6 +8,8 @@
 */
 
 import * as pr from "pareto-runtime"
+import * as pl from "pareto-lang-lib"
+import * as pa from "pareto-lang-api"
 
 import * as x from "astn-typedtreehandler-api"
 
@@ -37,7 +39,7 @@ export function createASTNSchemaDeserializer<EventAnnotation>(
     ): IValueHandler<EventAnnotation> {
         return ((callback: (out: x.__root_T) => void) => {
             let _root_type_v: AnnotatedString<EventAnnotation> | null = null
-            const _types_v = pr.createDictionaryBuilder<x.__types_T>()
+            const _types_v = pl.createDictionaryBuilder<x.__types_T>()
             return context.expectVerboseGroup({
                 properties: {
                     "root type": {
@@ -157,7 +159,7 @@ export function createASTNSchemaDeserializer<EventAnnotation>(
 
     function _generateHandler_value(
         callback: (out: x.__value_T) => void,
-        types: pr.IReadonlyLookup<x.__types_T>,
+        types: pa.IReadonlyLookup<x.__types_T>,
     ): IValueHandler<EventAnnotation> {
         return ((callback: (out: x.__value_T) => void) => {
             let _type_v: x.__type_TU | null = null
@@ -212,7 +214,7 @@ export function createASTNSchemaDeserializer<EventAnnotation>(
                                 },
                                 "group": () => {
                                     return wrap(((callback: (out: x.__group_T) => void) => {
-                                        const _properties_v = pr.createDictionaryBuilder<x.__properties_T>()
+                                        const _properties_v = pl.createDictionaryBuilder<x.__properties_T>()
                                         return context.expectVerboseGroup({
                                             properties: {
                                                 "properties": {
@@ -345,7 +347,7 @@ export function createASTNSchemaDeserializer<EventAnnotation>(
                                 "tagged union": () => {
                                     return wrap(((callback: (out: x.__tagged_union_T) => void) => {
                                         let _default_option_v: AnnotatedString<EventAnnotation> | null = null
-                                        const _options_v = pr.createDictionaryBuilder<x.__options_T>()
+                                        const _options_v = pl.createDictionaryBuilder<x.__options_T>()
                                         return context.expectVerboseGroup({
                                             properties: {
                                                 "default option": {
