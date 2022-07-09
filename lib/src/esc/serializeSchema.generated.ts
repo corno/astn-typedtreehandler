@@ -1,7 +1,7 @@
 import { Schema, ValueDefinition } from "astn-typedtreehandler-api"
-import * as pl from "pareto-lang-lib"
+import * as pl from "pareto-lib-core"
 import * as pr from "pareto-runtime"
-import * as pa from "pareto-lang-api"
+import * as pa from "pareto-api-core"
 import { ContentToken } from "astn-tokenconsumer-api"
 
 export function serializeSchema(

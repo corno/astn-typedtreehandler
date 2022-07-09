@@ -3,7 +3,7 @@
     "no-underscore-dangle": 0,
     "quote-props": 0
 */
-import * as pr from "pareto-lang-api"
+import * as pr from "pareto-api-core"
 
 export type __types_T = {
     readonly "value": __value_T

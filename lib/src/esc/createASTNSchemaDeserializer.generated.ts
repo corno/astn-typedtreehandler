@@ -8,8 +8,8 @@
 */
 
 import * as pr from "pareto-runtime"
-import * as pl from "pareto-lang-lib"
-import * as pa from "pareto-lang-api"
+import * as pl from "pareto-lib-core"
+import * as pa from "pareto-api-core"
 
 import * as x from "astn-typedtreehandler-api"
 
